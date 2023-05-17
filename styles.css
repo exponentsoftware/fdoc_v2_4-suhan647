@@ -8,6 +8,7 @@ html, body, ul, li {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-size: 16px;
     line-height: 1.6;
+    background-color: whitesmoke;
   }
   
   .container {
@@ -32,8 +33,12 @@ background: linear-gradient(to right, #d7d2cc, #304352);
   }
   
   header .blog-title {
-    font-size: 24px;
-    margin: 0;
+    font-size: 28px;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background: #6A9113;
+    background: -webkit-linear-gradient(to right, #141517, #6A9113);  
+    background: linear-gradient(to right, #141517, #6A9113); 
   }
   
   header nav ul {
@@ -194,32 +199,72 @@ background: linear-gradient(to right, #d7d2cc, #304352);
   
   /* Footer Styles */
   
-  footer {
-    background: #304352;  
-    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  
-    background: linear-gradient(to right, #d7d2cc, #304352); 
+  /* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer Styles */
+footer {
+    background: #304352;
+    background: linear-gradient(to right, #d7d2cc, #304352);
     color: #fff;
     padding: 20px 0;
-  }
-  
-  footer p {
+}
+
+footer p {
     margin: 0;
-  }
-  
-  footer nav ul {
+}
+
+footer nav ul {
     display: flex;
     justify-content: center;
     margin-top: 10px;
-  }
-  
-  footer nav ul li {
+}
+
+footer nav ul li {
     margin-right: 20px;
-  }
-  
-  footer nav ul li a {
+}
+
+footer nav ul li a {
     color: #fff;
     text-decoration: none;
-  }
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #ccc;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    footer nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer nav ul li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
 
 
 /* /// */
@@ -295,11 +340,13 @@ background: linear-gradient(to right, #d7d2cc, #304352);
   .read-more {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4caf50;
+    background: #485563;
+    background: -webkit-linear-gradient(to right, #29323c, #485563); 
+    background: linear-gradient(to right, #29323c, #485563); 
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.100s ease;
   }
   
   .read-more:hover {
@@ -369,3 +416,14 @@ background: linear-gradient(to right, #d7d2cc, #304352);
     }
   }
   
+  .header-img{
+    display: flex;
+    align-items: center;
+  }
+
+  h2{
+    background: #73C8A9; 
+    background: -webkit-linear-gradient(to right, #373B44, #73C8A9); 
+    background: linear-gradient(to right, #373B44, #73C8A9); 
+    
+  }
